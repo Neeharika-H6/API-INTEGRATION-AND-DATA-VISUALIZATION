@@ -1,0 +1,13 @@
+# Simulated weather data
+weather_data = [
+    {"city": "New York", "temperature": 22},
+    {"city": "Los Angeles", "temperature": 30},
+    {"city": "Chicago", "temperature": 18}
+]
+
+print("Weather Report (Temperature Bar Chart)")
+for data in weather_data:
+    print(f"{data['city']:15}: {'█' * (data['temperature'] // 2)} {data['temperature']}°C")
+
+
+
